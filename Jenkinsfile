@@ -14,5 +14,12 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage('Test') {
+            steps {
+                // npm test
+                sh './jenkins/scripts/test.sh'
+            }
+        }
+      
     }
 }
