@@ -14,7 +14,7 @@ job('simple-nodeJS-react-npm-docker-app') {
     }
     steps {
         dockerBuildAndPublish {
-            repositoryName('aschay/docker-nodejs-react')
+            repositoryName('aschay/dockernodejsreact')
             tag('testing')
             registryCredentials('dockerhub')
             forcePull(false)
